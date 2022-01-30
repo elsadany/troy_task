@@ -7,7 +7,7 @@
 - `php artisan migrate`
 
 - `php artisan db:seed`
-
+-`php artisan passport:install`
 -`php artisan test`
 -`you can test also with troycollection`
 -`you must put email configration in .env for mail`

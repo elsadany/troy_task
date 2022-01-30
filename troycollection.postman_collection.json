@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "14f4e65f-c0a8-46ae-b684-d861b8740753",
+		"name": "troy_task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "students",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmUwOTU4YmM3YzNjZjA3YzQ4N2QyMWMyYTVjYzcyMDA4MDkyNjYwYjE4MzVlMjU2MDJkYjZmNWE5ZjJjZGRjOTQyNzE2MzRhM2U5NjA1YjUiLCJpYXQiOjE2NDMyODk5NDkuMDgzNjMxLCJuYmYiOjE2NDMyODk5NDkuMDgzNjM3LCJleHAiOjE2NzQ4MjU5NDkuMDc3OTQ3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.rjXB6YyPgksy5syoWqpwDTUgLfBLOW1yfwpR0Bz86B2qpjVdozV75q3iE10_VIe8I2iy8C2OHmpVcd0JViMwigwoh2dChK31XMvXMeBH5cEZFcd7m4YMEehX5u23fl4KnX-vNWDo7GBvgz1g8lGDGAb2zhKhAWFxdFNimZl18Eu2Nz3xQGJHpc7AQ7vYu7jW89pNp6iuWcDOSqf1KbNTFxb6S49ko-yTts2YbkHULh4Bkn-iXaYlC39eqttwbaZhhWWx0CaFdASM-TivsHGD97jD4S98vlz3ZowI8xy0uOCsU5zp0PzdhoqR-msuKponrFbW4nSNrfzEMVWHNudFe1pAVKIWaqEonu2TZfRG4G__OpJj39GuKL7DHPzPZJ1MscvCmycPp-Te5oHcuCHrqjZ4s-TkuVonH4YLrioivT0ArMw1CIAuuNOkmltMNTSJZP1hfYBGo-M5BTXUgcT_HF48KBjwoK2lT6d2pDHbbLdhkSCdJcxb7KtpGx0qS0X0-ng1yaPzF-9ANcKQ__oqRL27OswqU3aw6tI0VbB3PXT4JTH4t7KF6hq_Xle2OIa_b9T-PtlAIy_NZQgKqqU6YpxsalxoM9hZ_Ha8-bmrtBmMCiCpaR6AEChTIRjAMkVJ1311VEm5RLyPJpTXlwg96bVixv1tMljyl_q9SFpuwCQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/troy/public/api/students/get?school_id=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"troy",
+								"public",
+								"api",
+								"students",
+								"get"
+							],
+							"query": [
+								{
+									"key": "school_id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@backend.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/troy/public/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"troy",
+						"public",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "schools",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "students/join",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tes1t1@t.com",
+							"type": "text"
+						},
+						{
+							"key": "school_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "222222",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/troy/public/api/students/join",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"troy",
+						"public",
+						"api",
+						"students",
+						"join"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
